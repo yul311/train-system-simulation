@@ -1,0 +1,127 @@
+; oc    1-31,144-150,151
+; sw    12,29
+; sg    1,2,9,16,22,31,150
+; cr    19
+
+occ 40
+sw 2
+sg 7
+cr 1
+
+; ========================================== switches ========================================== ;
+
+sw12 is
+if-occupied b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28,b29
+    0
+elif-occupied b1,b151,b2,b3
+    1
+else
+    0
+end
+
+sw29 is
+if-occupied b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28
+    0
+elif-occupied b1,b151,b2,b3
+    0
+elif-occupied b144,b145,b146,b147,b148,b149,b150
+    1
+else
+    0
+end
+
+; ========================================== signals =========================================== ;
+
+sg1 is
+if-switch sw12
+    0
+else
+    1
+end
+
+sg150 is
+if-switch sw29
+    0
+else
+    1
+end
+
+sg2 is
+if-occupied b2
+    1
+else
+    0
+end
+
+sg3 is
+if-occupied b3
+    1
+else
+    0
+end
+
+sg9 is
+if-occupied b9
+    1
+else
+    0
+end
+
+sg12 is
+if-occupied b12
+    1
+else
+    0
+end
+
+sg13 is
+if-occupied b13
+    1
+else
+    0
+end
+
+sg16 is
+if-occupied b16
+    1
+else
+    0
+end
+
+sg22 is
+if-occupied b22
+    1
+else
+    0
+end
+
+sg29 is
+if-occupied b29
+    1
+else
+    0
+end
+
+sg30 is
+if-occupied b30
+    1
+else
+    0
+end
+
+sg31 is
+if-occupied b31
+    1
+else
+    0
+end
+
+
+; ========================================== crossings ========================================= ;
+
+cr19 is
+if-occupied b17,b18,b19,b20,b21
+    1
+else
+    0
+end

@@ -1,0 +1,94 @@
+; oc    74-104,152
+; sw    77,85
+; sg    76,77,85,86,88,96,100,101
+; cr    
+
+occ 32
+sw 2
+sg 7
+cr 0
+
+; ========================================== switches ========================================== ;
+
+sw77 is
+if-occupied b77,b78,b79,b80,b81,b82,b83,b84,b85
+    1
+elif-occupied b98,b99,b100
+    1
+elif-occupied b74,b75,b76
+    0
+else 
+    1
+end
+
+sw85 is
+if-occupied b77,b78,b79,b80,b81,b82,b83,b84,b85
+    0
+elif-occupied b98,b99,b100
+    1
+else
+    0
+end
+
+; ========================================== signals =========================================== ;
+
+sg76 is
+if-switch sw77
+    1
+else
+    0
+end
+
+sg100 is
+if-switch sw85
+    0
+else
+    1
+end
+
+sg77 is
+if-occupied b77
+    1
+else
+    0
+end
+
+sg85 is
+if-occupied b85
+    1
+else
+    0
+end
+
+sg86 is
+if-occupied b86
+    1
+else
+    0
+end
+
+sg88 is
+if-occupied b88
+    1
+else
+    0
+end
+
+sg96 is
+if-occupied b96
+    1
+else
+    0
+end
+
+sg101 is
+if-occupied b101
+    1
+else
+    0
+end
+
+; ========================================== switches ========================================== ;
+; ========================================== signals =========================================== ;
+
+; ========================================== crossings ========================================= ;

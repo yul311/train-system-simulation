@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1144</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="font">
+    <font>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QWidget" name="header_layout" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>16</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="menu">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="header_icon">
+         <property name="maximumSize">
+          <size>
+           <width>55</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>images/AuroraLogo.jpg</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="header_ctc_label">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string>CTC Office</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="header_spacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Preferred</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>25</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="header_simulation_label">
+         <property name="font">
+          <font>
+           <pointsize>20</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string>Simulation Speed</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="header_pause_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>50</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="header_simulation_layout" native="true">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0" colspan="3">
+           <widget class="QSlider" name="simulation_slider">
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>1</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksBelow</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QLabel" name="simulation_10_label">
+            <property name="text">
+             <string>10x</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="simulation_1_label">
+            <property name="text">
+             <string>1x</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="header_time_display">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="text">
+          <string>xx/xx/xxxx xx:xx:xx</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="SendTrains">
+       <attribute name="title">
+        <string>Send Trains</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="Send_Train_Layout" columnstretch="0,1,2">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="Send_Train_Modes">
+            <item row="0" column="1">
+             <widget class="QRadioButton" name="send_manual_button">
+              <property name="text">
+               <string>Manual Mode</string>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup</string>
+              </attribute>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QWidget" name="Automatic_Layout" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>350</width>
+                <height>0</height>
+               </size>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="1">
+                <spacer name="automatic_vert_spacer">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLabel" name="automatic_error_label">
+                 <property name="text">
+                  <string>Error Label</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QPushButton" name="automatic_upload_button">
+                 <property name="text">
+                  <string>Upload Train Schedule</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="send_automatic_button">
+              <property name="text">
+               <string>Automatic Mode</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">buttonGroup</string>
+              </attribute>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QWidget" name="Manual_Layout" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>350</width>
+                <height>0</height>
+               </size>
+              </property>
+              <layout class="QGridLayout" name="Manual_Dispatch_Layout">
+               <item row="2" column="0">
+                <widget class="QComboBox" name="manual_train_block_input">
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="currentText">
+                  <string>Select Block</string>
+                 </property>
+                 <property name="insertPolicy">
+                  <enum>QComboBox::NoInsert</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QPushButton" name="manual_train_destination_button">
+                 <property name="text">
+                  <string>Add Desination</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QPushButton" name="manual_train_dispatch_button">
+                 <property name="text">
+                  <string>Dispatch Train</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QDateTimeEdit" name="manual_train_time_input">
+                 <property name="displayFormat">
+                  <string>M/d/yyyy hh:mm</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QComboBox" name="manual_train_line_input">
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="currentText">
+                  <string>Select Line</string>
+                 </property>
+                 <property name="insertPolicy">
+                  <enum>QComboBox::NoInsert</enum>
+                 </property>
+                 <property name="placeholderText">
+                  <string notr="true">Select Line</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Green Line</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>Red Line</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QLabel" name="manual_error_label">
+                 <property name="text">
+                  <string>Error Label</string>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
+                <widget class="QPushButton" name="manual_reset_button">
+                 <property name="text">
+                  <string>Reset Route</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QComboBox" name="manual_train_station_input">
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="currentText">
+                  <string>Select Station</string>
+                 </property>
+                 <property name="insertPolicy">
+                  <enum>QComboBox::NoInsert</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QTableWidget" name="manual_route_table">
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::NoEditTriggers</set>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>Station</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Arrival Time</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QGridLayout" name="train_layout">
+            <item row="5" column="1">
+             <widget class="QLabel" name="train_id_display">
+              <property name="text">
+               <string>No Train Selected</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0" colspan="2">
+             <widget class="QLabel" name="train_dispatch_label">
+              <property name="text">
+               <string>Dispatched Trains</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QTableWidget" name="train_schedule_table">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>400</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <column>
+               <property name="text">
+                <string>Line</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ID</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Departure Time</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="10" column="0" colspan="2">
+             <widget class="QTableWidget" name="train_route_table">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <column>
+               <property name="text">
+                <string>Destination</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Arrival Time</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QLabel" name="train_destination_display">
+              <property name="text">
+               <string>No Train Selected</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="train_line_label">
+              <property name="text">
+               <string>Line</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0" colspan="2">
+             <widget class="QLabel" name="train_schedule_label">
+              <property name="text">
+               <string>Scheduled Trains</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" colspan="2">
+             <widget class="QTableWidget" name="train_dispatch_table">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>400</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <column>
+               <property name="text">
+                <string>Line</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ID</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Departure Time</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="4" column="0" colspan="2">
+             <widget class="QLabel" name="train_info_label">
+              <property name="text">
+               <string>Train Information</string>
+              </property>
+             </widget>
+            </item>
+            <item row="9" column="0" colspan="2">
+             <widget class="QLabel" name="train_route_label">
+              <property name="text">
+               <string>Route</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="train_destination_label">
+              <property name="text">
+               <string>Next Destination</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLabel" name="train_line_display">
+              <property name="text">
+               <string>No Train Selected</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QLabel" name="train_position_display">
+              <property name="text">
+               <string>No Train Selected</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="train_id_label">
+              <property name="text">
+               <string>ID</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="train_position_label">
+              <property name="text">
+               <string>Train Position</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="2">
+           <layout class="QGridLayout" name="Send_Block_Layout" rowstretch="0,0,0,0,0,0,0">
+            <item row="2" column="0">
+             <widget class="QLabel" name="send_block_label">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <kerning>true</kerning>
+               </font>
+              </property>
+              <property name="text">
+               <string>Blocks</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QComboBox" name="block_line_input">
+              <item>
+               <property name="text">
+                <string>Green Line</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Red Line</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <layout class="QHBoxLayout" name="active_throughput_layout">
+              <item>
+               <widget class="QLabel" name="block_throughput_label">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Throughput&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="block_throughput_display">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;220/hr&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="5" column="0">
+             <widget class="QTableWidget" name="manual_block_table">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="sortingEnabled">
+               <bool>true</bool>
+              </property>
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>false</bool>
+              </attribute>
+              <column>
+               <property name="text">
+                <string>Block</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Status</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Infrastructure</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <widget class="QWidget" name="manual_block_layout" native="true">
+              <layout class="QGridLayout" name="Manual_Block_Layout">
+               <property name="verticalSpacing">
+                <number>7</number>
+               </property>
+               <item row="2" column="0">
+                <widget class="QComboBox" name="manual_block_switch_input">
+                 <property name="minimumSize">
+                  <size>
+                   <width>150</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="editable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="currentText">
+                  <string>Select Switch State</string>
+                 </property>
+                 <property name="insertPolicy">
+                  <enum>QComboBox::NoInsert</enum>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <layout class="QGridLayout" name="manual_maintenance_layout">
+                 <property name="verticalSpacing">
+                  <number>0</number>
+                 </property>
+                 <item row="0" column="0">
+                  <widget class="QPushButton" name="manual_block_close_button">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>283</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <kerning>true</kerning>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Put Block in Maintanence</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QPushButton" name="manual_block_open_button">
+                   <property name="minimumSize">
+                    <size>
+                     <width>283</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>12</pointsize>
+                     <kerning>true</kerning>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>Take Block out of Maintanence</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QComboBox" name="manual_block_input">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="editable">
+               <bool>true</bool>
+              </property>
+              <property name="currentText">
+               <string>Select Block</string>
+              </property>
+              <property name="insertPolicy">
+               <enum>QComboBox::NoInsert</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="testBench">
+       <attribute name="title">
+        <string>Testbench</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="tb_train_layout" rowstretch="0,0" columnstretch="1">
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="tb_train_input_layout">
+            <item row="1" column="0">
+             <widget class="QTextEdit" name="tb_speed_input">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Tickets&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QPushButton" name="tb_position_input">
+              <property name="text">
+               <string>Send Tickets</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <layout class="QGridLayout" name="tb_train_info_layout">
+              <property name="rightMargin">
+               <number>15</number>
+              </property>
+              <item row="2" column="0">
+               <layout class="QGridLayout" name="gridLayout">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="tb_authority_label">
+                  <property name="text">
+                   <string>Authority</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLabel" name="tb_authority_value">
+                  <property name="text">
+                   <string>200m</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="tb_speed_label">
+                  <property name="text">
+                   <string>Suggested Speed</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLabel" name="tb_speed_value">
+                  <property name="text">
+                   <string>20m/s</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="0">
+               <spacer name="tb_train_spacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QGridLayout" name="tb_block_layout" rowstretch="0,0,0,0,0,0">
+          <item row="4" column="0">
+           <spacer name="tb_block_spacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="2" column="0">
+           <widget class="QComboBox" name="tb_block_status_input">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="currentText">
+             <string/>
+            </property>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Fault</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="tb_error_label">
+            <property name="text">
+             <string>Error label</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QComboBox" name="tb_block_input">
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="tb_block_line_input">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="tb_occupancy_button">
+            <property name="text">
+             <string>Toggle Block Occupancy</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="tb_block_line_input">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionActive_Trains">
+   <property name="text">
+    <string>Send Trains</string>
+   </property>
+  </action>
+  <action name="actionView_Active_Trains">
+   <property name="text">
+    <string>View Active Trains</string>
+   </property>
+  </action>
+  <action name="actionTestbench">
+   <property name="text">
+    <string>Testbench</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ctc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>send_automatic_button</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>Automatic_Layout</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>148</x>
+     <y>219</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

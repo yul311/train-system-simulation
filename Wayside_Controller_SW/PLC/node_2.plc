@@ -1,0 +1,154 @@
+; oc    24-78
+; sw    32,38,43,52
+; sg    32,33,35,38,39,43,44,45,48,52,53,60,66,67,71,72
+; cr    47
+
+occ 55
+sw 4
+sg 16
+cr 1
+
+; ========================================== switches ========================================== ;
+
+sw32 is
+if-occupied b33,b34,b35,b36,b37,b38
+    1
+elif-occupied b28,b29,b30,b31,b32
+    0
+else
+    1
+end
+
+sw38 is
+if-occupied b33,b34,b35,b36,b37,b38
+    0
+elif-occupied b28,b29,b30,b31,b32
+    0
+elif-occupied b67,b68,b69,b70,b71
+    1
+else
+    0
+end
+
+sw43 is
+if-occupied b44,b45,b46,b47,b48,b49,b50,b51,b52
+    1
+elif-occupied b39,b40,b41,b42,b43
+    0
+else
+    1
+end
+
+sw52 is
+if-occupied b44,b45,b46,b47,b48,b49,b50,b51,b52
+    0
+elif-occupied b39,b40,b41,b42,b43
+    0
+elif-occupied b64,b65,b78,b66
+    1
+else
+    0
+end
+
+; ========================================== signals =========================================== ;
+
+sg32 is
+if-switch sw32
+    1
+else
+    0
+end
+
+sg33 is 0
+
+sg35 is
+if-occupied b35
+    1
+else
+    0
+end
+
+sg38 is 0
+
+sg39 is
+if-switch sw38
+    1
+else
+    0
+end
+
+sg43 is
+if-switch sw43
+    1
+else
+    0
+end
+
+sg44 is 0
+
+sg45 is
+if-occupied b45
+    1
+else
+    0
+end
+
+sg48 is
+if-occupied b48
+    1
+else
+    0
+end
+
+sg52 is 0
+
+sg53 is
+if-switch sw52
+    1
+else
+    0
+end
+
+sg60 is
+if-occupied b60
+    1
+else
+    0
+end
+
+sg66 is
+if-switch sw52
+    0
+else
+    1
+end
+
+sg67 is
+if-switch sw43
+    0
+else
+    1
+end
+
+sg71 is
+if-switch sw38
+    0
+else
+    1
+end
+
+sg72 is
+if-switch sw32
+    0
+else
+    1
+end
+
+; ========================================== crossings ========================================= ;
+
+cr47 is
+if-occupied b45,b46,b47,b48,b49
+    1
+else
+    0
+end

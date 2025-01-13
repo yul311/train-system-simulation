@@ -1,0 +1,126 @@
+; oc    0,33-73,105-143
+; sw    57,63
+; sg    0,39,48,57,62,65,73,105,114,123,132,141
+; cr    
+
+occ 81
+sw 2
+sg 12
+cr 0
+
+; ========================================== switches ========================================== ;
+
+sw63 is
+if-occupied b58,b59,b60,b61,b62
+    0
+elif-occupied b0
+    1
+else
+    0
+end
+
+sw57 is 0
+
+; ========================================== signals =========================================== ;
+
+; switch signals
+sg0 is
+if-switch sw63
+    0
+else
+    1
+end
+
+sg62 is
+if-switch sw63
+    1
+else
+    0
+end
+
+; station signals
+sg39 is
+if-occupied b39
+    1
+else
+    0
+end
+
+sg48 is
+if-occupied b48
+    1
+else
+    0
+end
+
+sg57 is
+if-occupied b57
+    1
+else
+    0
+end
+
+sg58 is
+if-occupied b58
+    1
+else
+    0
+end
+
+sg63 is
+if-occupied b63
+    1
+else
+    0
+end
+
+sg65 is
+if-occupied b65
+    1
+else
+    0
+end
+
+sg73 is
+if-occupied b73
+    1
+else
+    0
+end
+
+sg105 is
+if-occupied b105
+    1
+else
+    0
+end
+
+sg114 is
+if-occupied b114
+    1
+else
+    0
+end
+
+sg123 is
+if-occupied b123
+    1
+else
+    0
+end
+
+sg132 is
+if-occupied b132
+    1
+else
+    0
+end
+
+sg141 is
+if-occupied b141
+    1
+else
+    0
+end
+
+; ========================================== crossings ========================================= ;

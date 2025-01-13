@@ -1,0 +1,1980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>992</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="TrainModelInformation">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="Train_Model_Information">
+       <attribute name="title">
+        <string>Train Model Information</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetNoConstraint</enum>
+          </property>
+          <item>
+           <layout class="QGridLayout" name="train_left_layout">
+            <property name="verticalSpacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QTableWidget" name="PhysicalData">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>250</width>
+                <height>330</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>250</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="columnCount">
+               <number>1</number>
+              </property>
+              <attribute name="horizontalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="horizontalHeaderCascadingSectionResizes">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="horizontalHeaderDefaultSectionSize">
+               <number>100</number>
+              </attribute>
+              <attribute name="horizontalHeaderMinimumSectionSize">
+               <number>55</number>
+              </attribute>
+              <attribute name="horizontalHeaderStretchLastSection">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <attribute name="verticalHeaderCascadingSectionResizes">
+               <bool>true</bool>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>Power</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Current Speed</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Commanded Speed</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Speed Limit</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Acceleration</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Force</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Block Grade</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Authority</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Suggested Speed</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Train Data</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>60 W</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>0 mph</string>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="text">
+                <string>30 mph</string>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>43 mph</string>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="text">
+                <string>0.5 ft/s^2</string>
+               </property>
+              </item>
+              <item row="5" column="0">
+               <property name="text">
+                <string>45136 lb</string>
+               </property>
+              </item>
+              <item row="6" column="0">
+               <property name="text">
+                <string>0.5%</string>
+               </property>
+              </item>
+              <item row="7" column="0">
+               <property name="text">
+                <string>0 ft</string>
+               </property>
+              </item>
+              <item row="8" column="0">
+               <property name="text">
+                <string>0 mph</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="0" alignment="Qt::AlignHCenter">
+             <widget class="QTableWidget" name="DoorState">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>160</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <row>
+               <property name="text">
+                <string>Right</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Left</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Door State</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>Open</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>Closed</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="5" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QTableWidget" name="LightsState">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>160</width>
+                <height>90</height>
+               </size>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <row>
+               <property name="text">
+                <string>Internal</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>External</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Lights State</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>On</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>Off</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="3" column="0">
+             <spacer name="verticalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="mid_layout">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <item row="5" column="0">
+             <widget class="QPushButton" name="EmergencyButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>400</width>
+                <height>125</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>125</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>28</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Emergency Brake</string>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="0">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="train_info_layout">
+              <item>
+               <widget class="QLabel" name="TrainLine">
+                <property name="text">
+                 <string>Train Line: </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="TrainID">
+                <property name="text">
+                 <string>Train ID: </string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="1" column="0" alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+             <widget class="QLabel" name="Advertisment">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>400</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>images/Ad_3.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0" alignment="Qt::AlignHCenter">
+             <widget class="QTableWidget" name="BrakeState">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>95</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>95</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <row>
+               <property name="text">
+                <string>Emergency</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>Service</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Brake State</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>Disengaged</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>Disengaged</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <spacer name="verticalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="2" column="0">
+             <spacer name="verticalSpacer_7">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>300</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="title">
+             <string/>
+            </property>
+            <widget class="QWidget" name="verticalLayoutWidget_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>0</y>
+               <width>302</width>
+               <height>1105</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="Announcements">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>300</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>400</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Announcements: </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="1">
+                 <layout class="QVBoxLayout" name="murphyOutputsBlockTB_2">
+                  <item>
+                   <widget class="QPushButton" name="TestTrainEngine">
+                    <property name="text">
+                     <string>Trigger Fault</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="TestBrake">
+                    <property name="text">
+                     <string>Trigger Fault</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="TestSignalPickup">
+                    <property name="text">
+                     <string>Trigger Fault</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="0">
+                 <layout class="QVBoxLayout" name="murphylabelsBlock" stretch="0,0,0">
+                  <item>
+                   <widget class="QLabel" name="TrainEngineFailureLabel">
+                    <property name="text">
+                     <string>Train Engine Failure</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="SignalPickupFailureLabel">
+                    <property name="text">
+                     <string>Brake Failure</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="BrakeFailureLabel">
+                    <property name="text">
+                     <string>Signal Pickup Failure</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="resetButton">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Reset Faults</string>
+                </property>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QTableWidget" name="FailureModes">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>120</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <row>
+                 <property name="text">
+                  <string>Train Engine </string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Train Brake </string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Signal Pickup </string>
+                 </property>
+                </row>
+                <column>
+                 <property name="text">
+                  <string>Failure Modes</string>
+                 </property>
+                </column>
+                <item row="0" column="0">
+                 <property name="text">
+                  <string>Functioning</string>
+                 </property>
+                </item>
+                <item row="1" column="0">
+                 <property name="text">
+                  <string>Functioning</string>
+                 </property>
+                </item>
+                <item row="2" column="0">
+                 <property name="text">
+                  <string>Functioning</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item alignment="Qt::AlignHCenter">
+               <widget class="QTableWidget" name="TrainSize">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>200</width>
+                  <height>225</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>200</width>
+                  <height>225</height>
+                 </size>
+                </property>
+                <property name="editTriggers">
+                 <set>QAbstractItemView::NoEditTriggers</set>
+                </property>
+                <attribute name="horizontalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>175</number>
+                </attribute>
+                <attribute name="horizontalHeaderMinimumSectionSize">
+                 <number>1</number>
+                </attribute>
+                <row>
+                 <property name="text">
+                  <string>Crew Count</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Passenger Count</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Temperature</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Weight</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Length</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Width</string>
+                 </property>
+                </row>
+                <row>
+                 <property name="text">
+                  <string>Height</string>
+                 </property>
+                </row>
+                <column>
+                 <property name="text">
+                  <string>Train Information</string>
+                 </property>
+                </column>
+                <item row="0" column="0">
+                 <property name="text">
+                  <string>10</string>
+                 </property>
+                </item>
+                <item row="1" column="0">
+                 <property name="text">
+                  <string>120</string>
+                 </property>
+                </item>
+                <item row="2" column="0">
+                 <property name="text">
+                  <string>75 °F</string>
+                 </property>
+                </item>
+                <item row="3" column="0">
+                 <property name="text">
+                  <string>90272 lb</string>
+                 </property>
+                </item>
+                <item row="4" column="0">
+                 <property name="text">
+                  <string>105.64 ft</string>
+                 </property>
+                </item>
+                <item row="5" column="0">
+                 <property name="text">
+                  <string>8.69 ft</string>
+                 </property>
+                </item>
+                <item row="6" column="0">
+                 <property name="text">
+                  <string>11.22 ft</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Testbench</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0,0">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0">
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>400</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>Track Model Inputs</string>
+              </property>
+              <widget class="QWidget" name="verticalLayoutWidget_2">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>20</y>
+                 <width>141</width>
+                 <height>101</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QLabel" name="AuthorityLabel">
+                  <property name="text">
+                   <string>Authority</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="SpeedLimitLabel">
+                  <property name="text">
+                   <string>Speed Limit</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="BlockGradeLabel">
+                  <property name="text">
+                   <string>Block Grade</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="TicketSales">
+                  <property name="text">
+                   <string>Ticket Sales</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="verticalLayoutWidget_3">
+               <property name="geometry">
+                <rect>
+                 <x>150</x>
+                 <y>20</y>
+                 <width>121</width>
+                 <height>101</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QLineEdit" name="AuthorityIn"/>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="SpeedLimitIn"/>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="BlockGradeIn"/>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="lineEdit"/>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="verticalLayoutWidget_8">
+               <property name="geometry">
+                <rect>
+                 <x>280</x>
+                 <y>20</y>
+                 <width>56</width>
+                 <height>101</height>
+                </rect>
+               </property>
+               <layout class="QVBoxLayout" name="blockinfoscaleBlock_2">
+                <item>
+                 <widget class="QLabel" name="Ft">
+                  <property name="text">
+                   <string>ft</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="Ft_2">
+                  <property name="text">
+                   <string>mph</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="text">
+                   <string>%</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QPushButton" name="TestTrack_Model_Input">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>130</y>
+                 <width>181</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="text">
+                <string>Test Track Model Inputs</string>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="murphyInputsGroupTB">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>Murphy Inputs (Train Faults)</string>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_10">
+               <item row="0" column="0">
+                <layout class="QGridLayout" name="gridLayout_12">
+                 <item row="2" column="0" alignment="Qt::AlignHCenter">
+                  <widget class="QTableWidget" name="FailureModes_tb">
+                   <property name="minimumSize">
+                    <size>
+                     <width>275</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>275</width>
+                     <height>150</height>
+                    </size>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                   <row>
+                    <property name="text">
+                     <string>Train Engine</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>Train Brake</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>Signal Pickup</string>
+                    </property>
+                   </row>
+                   <column>
+                    <property name="text">
+                     <string>Failure Modes</string>
+                    </property>
+                   </column>
+                   <item row="0" column="0">
+                    <property name="text">
+                     <string>Functioning</string>
+                    </property>
+                   </item>
+                   <item row="1" column="0">
+                    <property name="text">
+                     <string>Functioning</string>
+                    </property>
+                   </item>
+                   <item row="2" column="0">
+                    <property name="text">
+                     <string>Functioning</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QPushButton" name="resetButton_tb">
+                   <property name="text">
+                    <string>Reset Faults</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_4">
+                   <item>
+                    <layout class="QVBoxLayout" name="murphylabelsBlockTB">
+                     <item>
+                      <widget class="QLabel" name="TrainEngineFailureLabel_tb">
+                       <property name="text">
+                        <string>Train Engine Failure</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="SignalPickupFailureLabel_tb">
+                       <property name="text">
+                        <string>Brake Failure</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="BrakeFailureLabel_tb">
+                       <property name="text">
+                        <string>Signal Pickup Failure</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="murphyOutputsBlockTB">
+                     <item>
+                      <widget class="QPushButton" name="TestTrainEngine_tb">
+                       <property name="text">
+                        <string>Test Train Engine</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="TestBrake_tb">
+                       <property name="text">
+                        <string>Test Brake</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QPushButton" name="TestSignalPickup_tb">
+                       <property name="text">
+                        <string>Test Signal Pickup</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="4" column="0">
+                  <spacer name="verticalSpacer_4">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>10</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="3" column="0" alignment="Qt::AlignHCenter">
+                  <widget class="QTableWidget" name="DoorState_tb">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>180</width>
+                     <height>110</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>180</width>
+                     <height>110</height>
+                    </size>
+                   </property>
+                   <property name="editTriggers">
+                    <set>QAbstractItemView::NoEditTriggers</set>
+                   </property>
+                   <row>
+                    <property name="text">
+                     <string>Right</string>
+                    </property>
+                   </row>
+                   <row>
+                    <property name="text">
+                     <string>Left</string>
+                    </property>
+                   </row>
+                   <column>
+                    <property name="text">
+                     <string>Door State</string>
+                    </property>
+                   </column>
+                   <item row="0" column="0">
+                    <property name="text">
+                     <string>Open</string>
+                    </property>
+                   </item>
+                   <item row="1" column="0">
+                    <property name="text">
+                     <string>Closed</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>370</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Train Controller Inputs</string>
+            </property>
+            <widget class="QPushButton" name="TestTrain_Controller_Input">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>320</y>
+               <width>201</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Test Train Controller Inputs</string>
+             </property>
+            </widget>
+            <widget class="QTableWidget" name="LightsState_tb">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>360</y>
+               <width>200</width>
+               <height>110</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>110</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>110</height>
+              </size>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <row>
+              <property name="text">
+               <string>Internal</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>External</string>
+              </property>
+             </row>
+             <column>
+              <property name="text">
+               <string>Lights State</string>
+              </property>
+             </column>
+             <item row="0" column="0">
+              <property name="text">
+               <string>On</string>
+              </property>
+             </item>
+             <item row="1" column="0">
+              <property name="text">
+               <string>Off</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QTableWidget" name="BrakeState_tb">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>480</y>
+               <width>275</width>
+               <height>110</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>275</width>
+               <height>110</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>275</width>
+               <height>110</height>
+              </size>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <row>
+              <property name="text">
+               <string>Emergency Brake</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Service Brake</string>
+              </property>
+             </row>
+             <column>
+              <property name="text">
+               <string>Brake State</string>
+              </property>
+             </column>
+             <item row="0" column="0">
+              <property name="text">
+               <string>Disengaged</string>
+              </property>
+             </item>
+             <item row="1" column="0">
+              <property name="text">
+               <string>Disengaged</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QWidget" name="gridLayoutWidget_5">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>30</y>
+               <width>256</width>
+               <height>293</height>
+              </rect>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_11">
+              <item row="5" column="0">
+               <widget class="QLabel" name="LeftDoor">
+                <property name="text">
+                 <string>Left Door</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QLabel" name="InternalLightsLabel">
+                <property name="text">
+                 <string>Internal Lights</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="SuggestedSpeedLabel">
+                <property name="text">
+                 <string>Commanded Speed</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="RightDoor">
+                <property name="text">
+                 <string>Right Door</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="ExternalLightsLabel">
+                <property name="text">
+                 <string>External Lights</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="1">
+               <widget class="QCheckBox" name="ServiceBrakeCheck">
+                <property name="text">
+                 <string>Engaged</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QCheckBox" name="ExternalLightsCheck">
+                <property name="text">
+                 <string>On</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QCheckBox" name="LeftDoorCheck">
+                <property name="text">
+                 <string>Open</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="TemperatureLabel">
+                <property name="text">
+                 <string>Temperature</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="SuggestedSpeedIn"/>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="PowerIn"/>
+              </item>
+              <item row="9" column="0">
+               <widget class="QLabel" name="ServiceBrakeLabel">
+                <property name="text">
+                 <string>Service Brake</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QLabel" name="EmergencyBrakeLabel">
+                <property name="text">
+                 <string>Emergency Brake</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="PowerLabel">
+                <property name="text">
+                 <string>Power</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QCheckBox" name="InternalLightsCheck">
+                <property name="text">
+                 <string>On</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="AnnouncementsLabel">
+                <property name="text">
+                 <string>Announcements</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QCheckBox" name="RightDoorCheck">
+                <property name="text">
+                 <string>Open</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="AnnouncementIn"/>
+              </item>
+              <item row="8" column="1">
+               <widget class="QCheckBox" name="EBrakeCheck">
+                <property name="text">
+                 <string>Engaged</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="TemperatureIn"/>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLabel" name="W">
+                <property name="text">
+                 <string>W</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="2">
+               <widget class="QLabel" name="MPH">
+                <property name="text">
+                 <string>mph</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLabel" name="F">
+                <property name="text">
+                 <string>°F</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="environmentalvariablesGroup_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Outputs from Train Model</string>
+            </property>
+            <widget class="QTableWidget" name="PhysicalData_tb">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>70</y>
+               <width>335</width>
+               <height>481</height>
+              </rect>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>335</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="columnCount">
+              <number>1</number>
+             </property>
+             <attribute name="horizontalHeaderMinimumSectionSize">
+              <number>55</number>
+             </attribute>
+             <row>
+              <property name="text">
+               <string>Authority</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Power</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Current Speed</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Suggested Speed</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Speed Limit</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Acceleration</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Force</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Tunnel/Underground</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Temperature</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Block Grade</string>
+              </property>
+             </row>
+             <row>
+              <property name="text">
+               <string>Total Mass</string>
+              </property>
+             </row>
+             <column>
+              <property name="text">
+               <string>Physical Data</string>
+              </property>
+             </column>
+             <item row="0" column="0">
+              <property name="text">
+               <string>9999 ft</string>
+              </property>
+             </item>
+             <item row="1" column="0">
+              <property name="text">
+               <string>60 W</string>
+              </property>
+             </item>
+             <item row="2" column="0">
+              <property name="text">
+               <string>0 mph</string>
+              </property>
+             </item>
+             <item row="3" column="0">
+              <property name="text">
+               <string>0 mph</string>
+              </property>
+             </item>
+             <item row="4" column="0">
+              <property name="text">
+               <string>43 mph</string>
+              </property>
+             </item>
+             <item row="5" column="0">
+              <property name="text">
+               <string>0 ft/s^2</string>
+              </property>
+             </item>
+             <item row="6" column="0">
+              <property name="text">
+               <string>0 lb</string>
+              </property>
+             </item>
+             <item row="7" column="0">
+              <property name="text">
+               <string>Tunnel</string>
+              </property>
+             </item>
+             <item row="8" column="0">
+              <property name="text">
+               <string>75 °F</string>
+              </property>
+             </item>
+             <item row="9" column="0">
+              <property name="text">
+               <string>0.5%</string>
+              </property>
+             </item>
+             <item row="10" column="0">
+              <property name="text">
+               <string>90272 lb</string>
+              </property>
+             </item>
+            </widget>
+            <widget class="QLabel" name="Announcements_tb">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>20</y>
+               <width>331</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>400</width>
+               <height>50</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Announcements: </string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="header_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="header_layout">
+       <item>
+        <widget class="QLabel" name="AuroraIMG">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>images/AuroraLogo.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+        <widget class="QTextBrowser" name="LogoBrower">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Train Model&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="1">
+          <widget class="QPushButton" name="redButton">
+           <property name="text">
+            <string>Red Line</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="TrainIdIn">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>16777215</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="greenButton">
+           <property name="text">
+            <string>Green Line</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="time_control">
+         <item>
+          <widget class="QLabel" name="simulation_speed_txt">
+           <property name="text">
+            <string>Simulation Speed</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="simSlider">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>10</number>
+           </property>
+           <property name="pageStep">
+            <number>1</number>
+           </property>
+           <property name="tracking">
+            <bool>false</bool>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksBelow</enum>
+           </property>
+           <property name="tickInterval">
+            <number>1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pauseSim">
+           <property name="maximumSize">
+            <size>
+             <width>75</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Pause Sim</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="timeLabel">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>00/00/0000 00:00</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionTrain_Model_Information">
+   <property name="text">
+    <string>Train Model Information</string>
+   </property>
+  </action>
+  <action name="actionTestbench">
+   <property name="text">
+    <string>Testbench</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionTrain_Model_Information</sender>
+   <signal>triggered()</signal>
+   <receiver>TrainModelInformation</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>540</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTestbench</sender>
+   <signal>triggered()</signal>
+   <receiver>TrainModelInformation</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>540</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

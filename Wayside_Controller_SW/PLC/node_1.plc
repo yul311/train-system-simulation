@@ -1,0 +1,119 @@
+; oc    0,1-45,67-77
+; sw    9,15,27
+; sg    0,1,7,9,10,15,16,21,25,27,28,77
+; cr    
+
+occ 57
+sw 3
+sg 12
+cr 0
+
+; ========================================== switches ========================================== ;
+
+sw9 is
+if-occupied b10,b11,b12
+    0
+elif-occupied b0
+    1
+else
+    0
+end
+
+sw15 is
+if-occupied b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27
+    0
+elif-occupied b1,b2,b3
+    1
+else
+    0
+end
+
+sw27 is
+if-occupied b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27
+    0
+elif-occupied b1,b2,b3
+    0
+elif-occupied b72,b73,b74,b75,b76,b77
+    1
+else
+    0
+end
+
+; ========================================== signals =========================================== ;
+
+sg0 is 
+if-switch sw9
+    0
+else
+    1
+end
+
+sg1 is 
+if-switch sw15
+    0
+else
+    1
+end
+
+sg7 is 
+if-occupied b7
+    1
+else
+    0
+end
+
+sg9 is 0
+
+sg10 is 
+if-switch sw9
+    1
+else
+    0
+end
+
+sg15 is 
+if-switch sw15
+    1
+else
+    0
+end
+
+sg16 is 
+if-occupied b16
+    1
+else
+    0
+end
+
+
+sg21 is 
+if-occupied b21
+    1
+else
+    0
+end
+
+sg25 is 
+if-occupied b25
+    1
+else
+    0
+end
+
+sg27 is 0
+
+sg28 is 
+if-switch sw27
+    1
+else
+    0
+end
+
+sg77 is
+if-switch sw27
+    0
+else
+    1
+end
+
+; ========================================== crossings ========================================= ;

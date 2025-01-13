@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrackModel</class>
+ <widget class="QMainWindow" name="TrackModel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1306</width>
+    <height>958</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Track Model</string>
+  </property>
+  <property name="documentMode">
+   <bool>true</bool>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="simulationSpeedBlock">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>1281</width>
+      <height>841</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="documentMode">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="trackMap">
+     <attribute name="title">
+      <string>Track Map</string>
+     </attribute>
+     <widget class="QGroupBox" name="faultsGroup">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>20</y>
+        <width>351</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Faults on Selected Block</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>160</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="faultsLabelBlock">
+        <item>
+         <widget class="QLabel" name="brokenRail">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="text">
+           <string>Broken Rail</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="trackcircuitFailure">
+          <property name="text">
+           <string>Track Circuit Failure</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="powerFailure">
+          <property name="text">
+           <string>Power Failure</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>160</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="faultsoutputBlock">
+        <item>
+         <widget class="QLabel" name="brokenRail_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="trackcircuitFailure_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="powerFailure_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="blockinfoGroup">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>130</y>
+        <width>361</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Block Information</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>160</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="blockinfolabelsBlock">
+        <item>
+         <widget class="QLabel" name="segmentSelected">
+          <property name="text">
+           <string>Section</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="blockNumber">
+          <property name="text">
+           <string>Block</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="blockLength">
+          <property name="text">
+           <string>Block Length</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="blockGrade">
+          <property name="text">
+           <string>Block Grade</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="maxspeedLimit">
+          <property name="text">
+           <string>Max Speed Limit</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="temperature">
+          <property name="text">
+           <string>Temperature</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="heaters">
+          <property name="text">
+           <string>Heaters</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>111</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="blockinfooutputBlock">
+        <item>
+         <widget class="QLabel" name="segmentSelected_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLCDNumber" name="blockNumber_O">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Outline</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLCDNumber" name="blockLength_O">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Outline</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLCDNumber" name="blockGrade_O">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Outline</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLCDNumber" name="maxspeedlimit_O">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Outline</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLCDNumber" name="temperature_O">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="segmentStyle">
+           <enum>QLCDNumber::Outline</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="heaters_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>30</y>
+         <width>57</width>
+         <height>173</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="blockinfoscaleBlock">
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>50</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Ft</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>%</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>MPH</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>°F</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>25</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>271</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="trackswitchOutputsTB_2">
+        <item>
+         <widget class="QLabel" name="trackswitchdirectionLabel_TB_2">
+          <property name="text">
+           <string>Switch Direction</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="switchFrom_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="directionLabelTB_2">
+          <property name="text">
+           <string>-----&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="switchTo_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="environmentalvariablesGroup">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>390</y>
+        <width>391</width>
+        <height>391</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Environmental Variables</string>
+      </property>
+      <widget class="QTableWidget" name="environmentTable">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>361</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="tabKeyNavigation">
+        <bool>false</bool>
+       </property>
+       <property name="showDropIndicator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="dragDropOverwriteMode">
+        <bool>false</bool>
+       </property>
+       <row>
+        <property name="text">
+         <string>Train Speed</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Elevation</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Cumulative Elevation</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Time to Travel Block</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Infastructure</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Accel and Decel</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Constant Speed Time</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Dwell Time</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Time to Station w/ Dwell Time</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Decel Rate</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Beacon</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Value</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="lineselectionsGroup">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>631</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Line Selection</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>591</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="lineselectionsBlock">
+        <item>
+         <widget class="QPushButton" name="buttonBlue">
+          <property name="text">
+           <string>Blue Line</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonRed">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Red Line</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonGreen">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Green Line</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>0</y>
+         <width>251</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Backend SI to Imperial Conversion Not Implemened</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>891</width>
+        <height>681</height>
+       </rect>
+      </property>
+      <property name="dragMode">
+       <enum>QGraphicsView::ScrollHandDrag</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="faultList">
+     <attribute name="title">
+      <string>Faults List</string>
+     </attribute>
+     <widget class="QTableWidget" name="faultlistTable">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>1151</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Block Segment</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Block Number</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>State</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Fault</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>10</y>
+        <width>851</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>36</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Not Implemented in this Version</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Testbench">
+     <attribute name="title">
+      <string>Testbench</string>
+     </attribute>
+     <widget class="QGroupBox" name="lineselectionsGroupTB">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>20</y>
+        <width>571</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Line Selection</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>541</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="lineselectionsBlockTB">
+        <item>
+         <widget class="QPushButton" name="buttonBlueTB">
+          <property name="text">
+           <string>Blue Line</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonRedTB">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Red Line</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonGreenTB">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Green Line</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>0</y>
+         <width>251</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Backend SI to Imperial Conversion Not Implemened</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="environmentalvariablesGroup_2">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>20</y>
+        <width>361</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Outputs from Track Model</string>
+      </property>
+      <widget class="QTableWidget" name="environmentTable_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>361</width>
+         <height>671</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="tabKeyNavigation">
+        <bool>false</bool>
+       </property>
+       <property name="showDropIndicator" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="dragDropOverwriteMode">
+        <bool>false</bool>
+       </property>
+       <row>
+        <property name="text">
+         <string>Temperature</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Block Section</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Block Number</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Occupancy</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Infastructure</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Track Heater</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Block Grade</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Block Length</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Max Speed Limit</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Elevation</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Cumulative Elevation</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Time to Travel Block</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Accel and Decel</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Constant Speed Time</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Dwell Time</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Time to Station w/ Dwell Time</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Decel Rate</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>Beacon</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Value</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="testbenchInputsGroupTB">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>20</y>
+        <width>341</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Set Internal/Environmental Inputs</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>160</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="environmentlabelsTBBlock">
+        <item>
+         <widget class="QLabel" name="Derailment_2">
+          <property name="text">
+           <string>Track Temperature</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="trackcircuitFailure_2">
+          <property name="text">
+           <string>Passenger Boarding Count</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="brokenTrack_2">
+          <property name="text">
+           <string>Total Occupancy</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>160</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="environmentOutputsTBBlock">
+        <item>
+         <widget class="QLineEdit" name="trackTemperature_I"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="boardingCount_I"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="occupancy_I"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="settempTB_Button">
+          <property name="text">
+           <string>Temperature</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="setboardingCountTB_button">
+          <property name="text">
+           <string>Boading Count</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="setOccupancyTB_Button">
+          <property name="text">
+           <string>Occupancy</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="trackcontrollerInputsGroupTB">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>160</y>
+        <width>341</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Track Controller Inputs</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="singalBlockTB">
+        <item>
+         <widget class="QLabel" name="blocksignalControl">
+          <property name="text">
+           <string>Block Signal Control</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="signalToggle_Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Toggle Signal</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>250</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="crossingBlockTB">
+        <item>
+         <widget class="QLabel" name="crossingControlLabel">
+          <property name="text">
+           <string>Crossing Control</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="crossingToggle_Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Toggle Crossing</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="trackSwitchBlockTB">
+        <item>
+         <widget class="QLabel" name="trackcontrolSwitch">
+          <property name="text">
+           <string>Track Switch Control</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="switchToggle_Button">
+          <property name="text">
+           <string>Toggle Switch</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="trackswitchOutputsTB">
+        <item>
+         <widget class="QLabel" name="trackswitchdirectionLabel_TB">
+          <property name="text">
+           <string>Direction</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="switchFromTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="directionLabelTB">
+          <property name="text">
+           <string>-----&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="switchToTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="signalOutputBlockTB">
+        <item>
+         <widget class="QLabel" name="signalLabel_TB">
+          <property name="text">
+           <string>Signal</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="signalNumberTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="signalStateTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="horizontalLayoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>290</y>
+         <width>291</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="crossingControlOutputsTB">
+        <item>
+         <widget class="QLabel" name="crossingLabel_TB">
+          <property name="text">
+           <string>Crossing</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="crossingNumberTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="crossingStateTB_O">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="murphyInputsGroupTB">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>490</y>
+        <width>341</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Murphy Inputs (Track Faults)</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>160</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="murphylabelsBlockTB">
+        <item>
+         <widget class="QLabel" name="brokenTrackLabelTB_M">
+          <property name="text">
+           <string>Broken Rail</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="trackcircuitFailureTB_M">
+          <property name="text">
+           <string>Track Circuit Failure</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="powerFailureLabelTB_M">
+          <property name="text">
+           <string>Power Failure</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_16">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>160</width>
+         <height>83</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="murphyOutputsBlockTB">
+        <item>
+         <widget class="QPushButton" name="railtestTB_Button">
+          <property name="text">
+           <string>Test Rail</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="circuittestTB_Button">
+          <property name="text">
+           <string>Test Circuit</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="powertestTB_Button">
+          <property name="text">
+           <string>Test Power</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="faultsGroupTB">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>600</y>
+        <width>341</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Faults on Selected Block</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>160</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLabel" name="brokentrackLabelTB">
+          <property name="text">
+           <string>Broken Rail</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="trackcircuitfailureLabelTB">
+          <property name="text">
+           <string>Track Circuit Failure</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="powerfailureLabelTB">
+          <property name="text">
+           <string>Power Failure</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_18">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>20</y>
+         <width>160</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="faultsoutputBlockTB">
+        <item>
+         <widget class="QLabel" name="brokenTrackTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="trackcircuitFailureTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="powerFailureTB_O">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>541</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="dragMode">
+       <enum>QGraphicsView::ScrollHandDrag</enum>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="trackmodelheaderLabel">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>0</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Track Model</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>71</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/AuroraLogo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>10</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="simulationSpeed">
+       <property name="text">
+        <string>Simulation Speed</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="simulationSpeed_O">
+       <property name="text">
+        <string>x</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dateTime">
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="date">
+        <date>
+         <year>2023</year>
+         <month>10</month>
+         <day>6</day>
+        </date>
+       </property>
+       <property name="time">
+        <time>
+         <hour>18</hour>
+         <minute>0</minute>
+         <second>0</second>
+        </time>
+       </property>
+       <property name="displayFormat">
+        <string>M/d/yyyy ddd h:mm AP</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="yellow">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1311</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>images/yellow.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>yellow</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>trackmodelheaderLabel</zorder>
+   <zorder>image</zorder>
+   <zorder>horizontalLayoutWidget_2</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1306</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuTraick_Model">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFault_List">
+    <property name="tearOffEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <property name="separatorsCollapsible">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTestBench">
+    <property name="title">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuTraick_Model"/>
+   <addaction name="menuFault_List"/>
+   <addaction name="menuTestBench"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

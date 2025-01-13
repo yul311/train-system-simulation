@@ -1,0 +1,9 @@
+*.pyc
+*.dat
+ws.py
+tmp.py
+tctrl_test.py
+test_ctrl.py
+todo_list.py
+authog.txt
+Wayside_Controller_SW/wayside_train_runner_for_testing.py
